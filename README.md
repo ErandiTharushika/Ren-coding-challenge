@@ -52,7 +52,7 @@ scratch in `src/main.cpp`, as required by the spec.
 ## Running it
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/ErandiTharushika/Ren-coding-challenge.git
 cd graph_solution
 chmod +x graph_solution        # only needed if the +x bit was lost, e.g. after zip/unzip
 ./graph_solution test_cases/graph1.csv
