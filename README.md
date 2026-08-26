@@ -11,7 +11,7 @@ list) and reports:
 ## Repo structure
 
 ```
-graph_solution/
+Ren-coding-challenge/
 ├── graph_solution 
 ├── Makefile
 ├── src/
@@ -53,7 +53,7 @@ scratch in `src/main.cpp`, as required by the spec.
 
 ```bash
 git clone https://github.com/ErandiTharushika/Ren-coding-challenge.git
-cd graph_solution
+cd Ren-coding-challenge
 chmod +x graph_solution        # only needed if the +x bit was lost, e.g. after zip/unzip
 ./graph_solution test_cases/graph1.csv
 ```
