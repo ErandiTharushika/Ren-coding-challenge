@@ -11,11 +11,11 @@ list) and reports:
 ## Repo structure
 
 ```
-graph_solution/
-├── graph_solution          <- the command you run (a small shell wrapper)
-├── Makefile                 <- builds the real C++ binary
+Ren-coding-challenge/
+├── graph_solution 
+├── Makefile
 ├── src/
-│   └── main.cpp              <- all the actual logic lives here
+│   └── main.cpp 
 ├── test_cases/
 │   ├── graph1.csv
 │   ├── graph1_output.txt
@@ -23,7 +23,7 @@ graph_solution/
 │   ├── graph2_output.txt
 │   ├── graph3.csv
 │   └── graph3_output.txt
-├── bin/                      <- created automatically on first run (compiled binary goes here)
+├── bin/  
 └── README.md
 ```
 
@@ -52,8 +52,8 @@ scratch in `src/main.cpp`, as required by the spec.
 ## Running it
 
 ```bash
-git clone <your-repo-url>
-cd graph_solution
+git clone https://github.com/ErandiTharushika/Ren-coding-challenge.git
+cd Ren-coding-challenge
 chmod +x graph_solution        # only needed if the +x bit was lost, e.g. after zip/unzip
 ./graph_solution test_cases/graph1.csv
 ```
