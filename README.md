@@ -12,10 +12,10 @@ list) and reports:
 
 ```
 graph_solution/
-├── graph_solution          <- the command you run (a small shell wrapper)
-├── Makefile                 <- builds the real C++ binary
+├── graph_solution 
+├── Makefile
 ├── src/
-│   └── main.cpp              <- all the actual logic lives here
+│   └── main.cpp 
 ├── test_cases/
 │   ├── graph1.csv
 │   ├── graph1_output.txt
@@ -23,7 +23,7 @@ graph_solution/
 │   ├── graph2_output.txt
 │   ├── graph3.csv
 │   └── graph3_output.txt
-├── bin/                      <- created automatically on first run (compiled binary goes here)
+├── bin/  
 └── README.md
 ```
 
