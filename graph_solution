@@ -1,0 +1,18 @@
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+BIN_PATH="$SCRIPT_DIR/bin/graph_solution_bin"
+SRC_PATH="$SCRIPT_DIR/src/main.cpp"
+
+if [ ! -x "$BIN_PATH" ] || [ "$SRC_PATH" -nt "$BIN_PATH" ]; then
+    echo "[graph_solution] Building binary (first run or source changed)..." >&2
+
+    if command -v make >/dev/null 2>&1; then
+        make -C "$SCRIPT_DIR" >&2
+    else
+        mkdir -p "$SCRIPT_DIR/bin"
+        g++ -O2 -std=c++17 -Wall -Wextra -o "$BIN_PATH" "$SRC_PATH"
+    fi
+fi
+
+exec "$BIN_PATH" "$@"

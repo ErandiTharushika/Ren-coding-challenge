@@ -1,0 +1,5 @@
+is_dag: false
+max_in_degree: 499
+max_out_degree: 499
+pr_max: 0.003388
+pr_min: 0.000001
